@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SMA Pharma — smapharma.com</title>
+<link rel="canonical" href="https://smapharma.com/" />
+<meta name="description" content="SMA Pharma — pharmaceutical products. Visit smapharma.com for product details and contact." />
+<meta name="theme-color" content="#000000" />
+
+<style>
+  :root{ --bg:#f5f5f5; --card:#ffffff; --accent:#e9553f; --muted:#666; --radius:8px; }
+  body{ margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:#111; }
+  header{ background:#000; color:#fff; padding:12px 14px; }
+  .header-row{ display:flex; align-items:center; gap:12px; max-width:960px; margin:0 auto; }
+  .site-logo{ display:flex; align-items:center; gap:12px; }
+  .site-logo img{ height:48px; width:auto; display:block; }
+  .brand{ font-size:22px; font-weight:700; color:#fff; margin:0; }
+  .menu-btn{ margin-left:auto; }
+  .container{ padding:16px; max-width:960px; margin:0 auto; }
+  .cards{ display:grid; grid-template-columns:1fr; gap:18px; }
+  @media(min-width:720px){ .cards{ grid-template-columns:repeat(2,1fr); } }
+  .card{ background:var(--card); border-radius:var(--radius); padding:14px; box-shadow:0 2px 6px rgba(0,0,0,0.08); border:1px solid rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:12px; }
+  .card img{ width:100%; height:auto; border-radius:6px; object-fit:contain; background:#fff; max-height:260px; }
+  .title{ font-size:18px; margin:0; font-weight:600; }
+  .desc{ font-size:14px; color:var(--muted); margin-bottom:6px; }
+  .btn{ display:inline-block; width:100%; padding:12px; border:3px solid var(--accent); border-radius:8px; font-size:18px; color:var(--accent); background:transparent; text-align:center; cursor:pointer; text-decoration:none; box-sizing:border-box; }
+  .btn:hover{ background: rgba(233,85,63,0.04); }
+  footer{ background:#000; color:#fff; text-align:center; padding:16px; font-size:14px; margin-top:20px; }
+  footer a{ color:#25D366; text-decoration:none; }
+  .tel-link{ color:var(--accent); font-weight:600; text-decoration:none; }
+  .modal{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); z-index:1000; }
+  .modal.open{ display:flex; }
+  .modal-content{ max-width:94%; max-height:90%; background:#fff; padding:12px; border-radius:10px; box-shadow:0 6px 30px rgba(0,0,0,0.4); }
+  .modal-content img{ width:100%; height:auto; display:block; border-radius:6px; }
+  .modal-close{ display:inline-block; margin-top:8px; padding:8px 12px; background:#f2f2f2; border-radius:6px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <div class="site-logo">
+      <img src="images/logo.png" alt="SMA Pharma logo" />
+      <div class="brand">SMA Pharma</div>
+    </div>
+    <div class="menu-btn" style="margin-left:auto;">
+      <button aria-label="menu" style="background:#111;color:#fff;border:none;padding:10px;border-radius:4px;">☰</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="cards" aria-label="Products list">
+
+    <!-- Product entries added: use these image filenames in images/ folder -->
+
+    <article class="card">
+      <img src="images/smaxillin-cv-625mg.jpg" alt="Smaxillin CV 625 mg — Amoxycillin & Clavulanic Acid with Lactic Acid Bacillus, 10x10 tablets (pink packaging)" loading="lazy" data-full="images/smaxillin-cv-625mg.jpg" />
+      <div class="title">Smaxillin CV — 625 mg</div>
+      <div class="desc">Amoxycillin & Clavulanic Acid with Lactic Acid Bacillus — 10x10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/smavit-gold-softgel.jpg" alt="SMAVIT-GOLD multivitamin softgel box with fruit images and ingredient panel (orange and navy packaging)" loading="lazy" data-full="images/smavit-gold-softgel.jpg" />
+      <div class="title">SMAVIT-GOLD — Softgel</div>
+      <div class="desc">Grape Seed ext., Lycopene, Multivitamin, Multimineral & Antioxidant Softgel Capsules</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/smaxim-lb-200mg.jpg" alt="Smaxim LB 200 mg — Cefixime with Lactic Acid Bacillus tablets, 10x10 tablets (blue packaging)" loading="lazy" data-full="images/smaxim-lb-200mg.jpg" />
+      <div class="title">Smaxim LB — 200 mg</div>
+      <div class="desc">Cefixime & Lactic Acid Bacillus — 10x10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/s-doxcin-lb.jpg" alt="S DOXCIN-LB — Doxycycline and Lactic Acid Bacillus capsules, packaging with composition and caution panel (magenta packaging)" loading="lazy" data-full="images/s-doxcin-lb.jpg" />
+      <div class="title">S DOXCIN‑LB — Doxycycline</div>
+      <div class="desc">Doxycycline and Lactic Acid Bacillus Capsules — 10x10 Capsules</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/s-fenac-mr.jpg" alt="S FENAC‑MR — Aceclofenac 100 mg, Paracetamol 325 mg & Chlorzoxazone 250 mg tablets, orange/pink packaging (10x10)" loading="lazy" data-full="images/s-fenac-mr.jpg" />
+      <div class="title">S FENAC‑MR</div>
+      <div class="desc">Aceclofenac, Paracetamol & Chlorzoxazone — 10x10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/oflosma-oz.jpg" alt="OFLOSMA‑OZ — Ofloxacin 200 mg & Ornidazole 500 mg tablets, yellow/white packaging (10x10)" loading="lazy" data-full="images/oflosma-oz.jpg" />
+      <div class="title">OFLOSMA‑OZ</div>
+      <div class="desc">Ofloxacin & Ornidazole — 10x10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/s-fenac-sp.jpg" alt="S FENAC‑SP — Aceclofenac 100 mg, Paracetamol 325 mg & Serratiopeptidase tablets, purple packaging (10x10)" loading="lazy" data-full="images/s-fenac-sp.jpg" />
+      <div class="title">S FENAC‑SP</div>
+      <div class="desc">Aceclofenac, Paracetamol & Serratiopeptidase — 10x10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/s-fenac-p.jpg" alt="S FENAC‑P — Aceclofenac 100 mg & Paracetamol 325 mg tablets, light purple packaging (10x10)" loading="lazy" data-full="images/s-fenac-p.jpg" />
+      <div class="title">S FENAC‑P</div>
+      <div class="desc">Aceclofenac & Paracetamol — 10x10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/smatop-dsr.jpg" alt="SMATOP‑DSR — Pantoprazole (gastro‑resistant) & Domperidone prolonged release capsules packaging, light-blue design (10x10)" loading="lazy" data-full="images/smatop-dsr.jpg" />
+      <div class="title">SMATOP‑DSR</div>
+      <div class="desc">Pantoprazole gastro‑resistant & Domperidone — 10x10 Capsules</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/s-fenac-gel-30g.jpg" alt="S‑FENAC GEL — topical diclofenac/menthol gel tube packaging with runner illustration, 30 g" loading="lazy" data-full="images/s-fenac-gel-30g.jpg" />
+      <div class="title">S‑FENAC GEL — 30 g</div>
+      <div class="desc">Diclofenac Diethylamine, Methyl Salicylate, Linseed Oil & Menthol Gel</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/smacid-mps-100ml.jpg" alt="Smacid‑MPS 100 ml — antacid oral suspension (mint flavour), white and pink label with stomach icon" loading="lazy" data-full="images/smacid-mps-100ml.jpg" />
+      <div class="title">Smacid‑MPS — 100 ml</div>
+      <div class="desc">Dried Aluminium Hydrochloride, Magnesium Hydrochloride & Simethicone Oral Suspension (Mint, Sugar Free)</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/seraid-p-nimesulide-paracetamol.jpg" alt="SERAID‑P — Nimesulide & Paracetamol tablets packaging artwork, white with light-blue concentric motif (4×5×10)" loading="lazy" data-full="images/seraid-p-nimesulide-paracetamol.jpg" />
+      <div class="title">SERAID‑P</div>
+      <div class="desc">Nimesulide & Paracetamol — 4×5×10 Tablets</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/light-skin-cream-15g.jpg" alt="Light Skin cream — Hydroquinone, Tretinoin & Mometasone Furoate cream, 15 g, black and gold packaging with model photo" loading="lazy" data-full="images/light-skin-cream-15g.jpg" />
+      <div class="title">Light Skin Cream — 15 g</div>
+      <div class="desc">Hydroquinone, Tretinoin & Mometasone Furoate — topical cream</div>
+      <a class="btn" href="tel:+918053176177" aria-label="Call 8053176177">📞 Call – 8053176177</a>
+    </article>
+
+    <article class="card">
+      <img src="images/smapharma-products-screenshot.jpg" alt="Mobile screenshot of SMA Pharma site showing product cards for Smaxillin CV (625 mg) and Smaxim LB (200 mg) with ‘For More Details’ buttons" loading="lazy" data-full="images/smapharma-products-screenshot.jpg" />
+      <div class="title">SMA Pharma — Site Preview</div>
+      <div class="desc">Mobile preview of product gallery</div>
+      <a class="btn" href="https://smapharma.com" target="_blank" rel="noopener noreferrer">🌐 Visit Site</a>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  📍 Badkali, Delhi–Alwar Road, District Nuh, Haryana – 122103<br><br>
+  📞 <a class="tel-link" href="tel:+918053176177">8053176177</a> | <a class="tel-link" href="tel:+918396816180">8396816180</a> | <a class="tel-link" href="tel:+919992641183">9992641183</a><br><br>
+  💬 24×7 <a class="tel-link" href="https://wa.me/918053176177" target="_blank" rel="noopener noreferrer">WhatsApp Support</a><br><br>
+  📸 Instagram:
+  <a href="https://instagram.com/beinganaskhan00" target="_blank" rel="noopener noreferrer">@beinganaskhan00</a> |
+  <a href="https://instagram.com/beingshadiqkhan00" target="_blank" rel="noopener noreferrer">@beingshadiqkhan00</a> |
+  <a href="https://instagram.com/_mohd_shad_ahmed" target="_blank" rel="noopener noreferrer">@_mohd_shad_ahmed</a> |
+  <a href="https://instagram.com/sma_pharma" target="_blank" rel="noopener noreferrer">@sma_pharma</a>
+</footer>
+
+<!-- IMAGE VIEWER MODAL -->
+<div id="imgModal" class="modal" role="dialog" aria-hidden="true" aria-label="Image preview">
+  <div class="modal-content" role="document">
+    <img id="modalImg" src="" alt="Full product label" />
+    <div style="text-align:right;">
+      <button id="closeModal" class="modal-close" aria-label="Close">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Open modal when product image clicked
+  document.querySelectorAll('.card img[data-full]').forEach(img=>{
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      const modal = document.getElementById('imgModal');
+      const modalImg = document.getElementById('modalImg');
+      modalImg.src = img.dataset.full || img.src;
+      modalImg.alt = img.alt || 'Product label';
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+    });
+  });
+  document.getElementById('closeModal').addEventListener('click', () => {
+    const modal = document.getElementById('imgModal');
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.getElementById('modalImg').src = '';
+  });
+  // Close modal on background click
+  document.getElementById('imgModal').addEventListener('click', (e)=>{
+    if(e.target === e.currentTarget){
+      e.currentTarget.classList.remove('open');
+      e.currentTarget.setAttribute('aria-hidden','true');
+      document.getElementById('modalImg').src = '';
+    }
+  });
+</script>
+
+</body>
+</html>
